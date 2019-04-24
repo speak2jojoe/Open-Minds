@@ -1,0 +1,19 @@
+﻿@using CaptchaMvc.HtmlHelpers
+
+@{
+    ViewBag.Title = "Captcha";
+}
+
+@using (Html.BeginForm("ValidateCaptcha", "Captcha", new{ enctype = "multipart/form-data", id = "Captcha"}))
+{
+    // use this one
+    @Html.MathCaptcha() 
+    // Or this one
+    @Html.Captcha(7)
+
+     @ViewBag.ErrMessage
+
+    <p>
+        <input type="submit" value="Send" />
+    </p>
+}   

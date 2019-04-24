@@ -1,0 +1,72 @@
+﻿@model PagedList.IPagedList<WebApp.Models.User>
+
+@using PagedList.Mvc;
+@{
+    ViewBag.Title = "Users List";
+}
+
+<h2>Employee List</h2>
+
+@using (Html.BeginForm())
+{
+    <table>
+        <tr>
+            <th style="border: 2px solid black; text-align: center; width: 12%">
+                @Html.ActionLink("ID", "Index",
+            new { sortOrder = "id", CurrentSort = ViewBag.CurrentSort })
+            </th>
+            <th style="border: 2px solid black; text-align: center; width: 25%">
+                @Html.ActionLink("Name", "Index",
+            new { sortOrder = "name", CurrentSort = ViewBag.CurrentSort })
+            </th>
+            <th style="border: 2px solid black; text-align: center; width: 15%;">
+                @Html.ActionLink("Email", "Index",
+            new { sortOrder = "email", CurrentSort = ViewBag.CurrentSort })
+            </th>
+            <th style="border: 2px solid black; text-align: center; width: 10%;">
+                @Html.ActionLink("Phone No", "Index",
+            new { sortOrder = "phoneno", CurrentSort = ViewBag.CurrentSort })
+            </th>
+            <th style="border: 2px solid black; text-align: center; width: 10%;">
+                @Html.ActionLink("Address", "Index",
+            new { sortOrder = "address", CurrentSort = ViewBag.CurrentSort })
+            </th>
+
+            <th style="border: 2px solid black; text-align: center; width: 10%;">
+                @Html.ActionLink("Status", "Index",
+            new { sortOrder = "status", CurrentSort = ViewBag.CurrentSort })
+            </th>
+
+        </tr>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td style="border: 2px solid black; text-align: center; word-wrap: break-word;">
+                    @Html.DisplayFor(modelItem => item.id)
+                </td>
+                <td style="border: 2px solid black; text-align: center; word-wrap: break-word;">
+                    @Html.DisplayFor(modelItem => item.name)
+                </td>
+                <td style="border: 2px solid black; text-align: center; word-wrap: break-word;">
+                    @Html.DisplayFor(modelItem => item.email)
+                </td>
+                <td style="border: 2px solid black; text-align: center; word-wrap: break-word;">
+                    @Html.DisplayFor(modelItem => item.phoneno)
+                </td>
+                <td style="border: 2px solid black; text-align: center; word-wrap: break-word;">
+                    @Html.DisplayFor(modelItem => item.address)
+                </td>
+                <td style="border: 2px solid black; text-align: center; word-wrap: break-word;">
+                    @Html.DisplayFor(modelItem => item.status)
+                </td>
+            </tr>
+        }
+    </table>
+    <br />
+    <div id='Paging' style="text-align: center">
+        Page @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber)
+        of @Model.PageCount
+
+        @Html.PagedListPager(Model, page => Url.Action("Index", new { page }))
+    </div>
+}             

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<test-run id="2" testcasecount="4" result="Passed" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="4" engine-version="3.9.0.0" clr-version="4.0.30319.42000" start-time="2018-09-21 14:52:35Z" end-time="2018-09-21 14:52:37Z" duration="1.360991">
+  <command-line><![CDATA[nunit3-console  WebApp.UnitTests.dll]]></command-line>
+  <test-suite type="Assembly" id="0-1006" name="WebApp.UnitTests.dll" fullname="C:\Users\joshua.okoro\Documents\Visual Studio 2015\Projects\WebApp\WebApp.UnitTests\bin\Debug\WebApp.UnitTests.dll" runstate="Runnable" testcasecount="4" result="Passed" start-time="2018-09-21 14:52:36Z" end-time="2018-09-21 14:52:37Z" duration="0.098524" total="4" passed="4" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="4">
+    <environment framework-version="3.8.0.0" clr-version="4.0.30319.42000" os-version="Microsoft Windows NT 10.0.10240.0" platform="Win32NT" cwd="C:\Users\joshua.okoro\Documents\Visual Studio 2015\Projects\WebApp\WebApp.UnitTests\bin\Debug" machine-name="VGG-LT-176" user="joshua.okoro" user-domain="VENTUREGARDEN" culture="en-US" uiculture="en-US" os-architecture="x64" />
+    <settings>
+      <setting name="DisposeRunners" value="True" />
+      <setting name="WorkDirectory" value="C:\Users\joshua.okoro\Documents\Visual Studio 2015\Projects\WebApp\WebApp.UnitTests\bin\Debug" />
+      <setting name="ImageRuntimeVersion" value="4.0.30319" />
+      <setting name="ImageTargetFrameworkName" value=".NETFramework,Version=v4.5.2" />
+      <setting name="ImageRequiresX86" value="False" />
+      <setting name="ImageRequiresDefaultAppDomainAssemblyResolver" value="False" />
+      <setting name="NumberOfTestWorkers" value="4" />
+    </settings>
+    <properties>
+      <property name="_PID" value="16832" />
+      <property name="_APPDOMAIN" value="domain-" />
+    </properties>
+    <test-suite type="TestSuite" id="0-1007" name="WebApp" fullname="WebApp" runstate="Runnable" testcasecount="4" result="Passed" start-time="2018-09-21 14:52:36Z" end-time="2018-09-21 14:52:37Z" duration="0.065619" total="4" passed="4" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="4">
+      <test-suite type="TestSuite" id="0-1008" name="UnitTests" fullname="WebApp.UnitTests" runstate="Runnable" testcasecount="4" result="Passed" start-time="2018-09-21 14:52:36Z" end-time="2018-09-21 14:52:37Z" duration="0.064524" total="4" passed="4" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="4">
+        <test-suite type="TestFixture" id="0-1000" name="MathTests" fullname="WebApp.UnitTests.MathTests" classname="WebApp.UnitTests.MathTests" runstate="Runnable" testcasecount="1" result="Passed" start-time="2018-09-21 14:52:36Z" end-time="2018-09-21 14:52:37Z" duration="0.049198" total="1" passed="1" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="1">
+          <test-case id="0-1001" name="Add_WhenCalled_ReturnTheSumOfArguements" fullname="WebApp.UnitTests.MathTests.Add_WhenCalled_ReturnTheSumOfArguements" methodname="Add_WhenCalled_ReturnTheSumOfArguements" classname="WebApp.UnitTests.MathTests" runstate="Runnable" seed="892683370" result="Passed" start-time="2018-09-21 14:52:36Z" end-time="2018-09-21 14:52:37Z" duration="0.033367" asserts="1" />
+        </test-suite>
+        <test-suite type="TestFixture" id="0-1002" name="ReservationTestsNUnitTest" fullname="WebApp.UnitTests.ReservationTestsNUnitTest" classname="WebApp.UnitTests.ReservationTestsNUnitTest" runstate="Runnable" testcasecount="3" result="Passed" start-time="2018-09-21 14:52:37Z" end-time="2018-09-21 14:52:37Z" duration="0.005071" total="3" passed="3" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="3">
+          <test-case id="0-1005" name="CanBeCancelledBy_AnotherUserCancellingReservation_ReturnsFalse" fullname="WebApp.UnitTests.ReservationTestsNUnitTest.CanBeCancelledBy_AnotherUserCancellingReservation_ReturnsFalse" methodname="CanBeCancelledBy_AnotherUserCancellingReservation_ReturnsFalse" classname="WebApp.UnitTests.ReservationTestsNUnitTest" runstate="Runnable" seed="1607033163" result="Passed" start-time="2018-09-21 14:52:37Z" end-time="2018-09-21 14:52:37Z" duration="0.002322" asserts="1" />
+          <test-case id="0-1004" name="CanBeCancelledBy_SameUserCancellingTheReservation_ReturnsTrue" fullname="WebApp.UnitTests.ReservationTestsNUnitTest.CanBeCancelledBy_SameUserCancellingTheReservation_ReturnsTrue" methodname="CanBeCancelledBy_SameUserCancellingTheReservation_ReturnsTrue" classname="WebApp.UnitTests.ReservationTestsNUnitTest" runstate="Runnable" seed="628437218" result="Passed" start-time="2018-09-21 14:52:37Z" end-time="2018-09-21 14:52:37Z" duration="0.001374" asserts="1" />
+          <test-case id="0-1003" name="CanBeCancelledBy_UserIsAdmin_ReturnsTrue" fullname="WebApp.UnitTests.ReservationTestsNUnitTest.CanBeCancelledBy_UserIsAdmin_ReturnsTrue" methodname="CanBeCancelledBy_UserIsAdmin_ReturnsTrue" classname="WebApp.UnitTests.ReservationTestsNUnitTest" runstate="Runnable" seed="334760111" result="Passed" start-time="2018-09-21 14:52:37Z" end-time="2018-09-21 14:52:37Z" duration="0.000438" asserts="1" />
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>
